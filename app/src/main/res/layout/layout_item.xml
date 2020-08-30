@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:maxHeight="140dp"
+    android:background="@drawable/card_bg">
+
+    <ImageView
+        android:id="@+id/main_pic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="小白鞋女2019百搭学生韩版2020新款春季爆款超火运动老爹鞋ins潮"
+            android:textColor="#000000"
+            android:maxLines="2"
+            android:lines="2"
+            android:textSize="15sp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_weight="3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:text="券"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:background="@drawable/coupon_left_bg"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:background="@drawable/coupon_right_bg">
+
+                        <TextView
+                            android:id="@+id/coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="45"
+                            android:gravity="center|right"
+                            android:layout_gravity="center"
+                            android:textColor="#ff4020"
+                            android:textSize="12sp"
+                            android:paddingLeft="5dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:text="元"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="#ff4020"
+                            android:textSize="12sp"
+                            android:paddingRight="5dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="7dp"
+                    android:layout_height="4dp"
+                    android:background="@drawable/coupon_center_bg"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="已售"/>
+
+                <TextView
+                    android:id="@+id/volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="319776"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <ProgressBar
+                android:id="@+id/pb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:max="100"
+                android:progress="25"
+                android:progressDrawable="@drawable/progressbar_bg"
+                android:background="@color/colorPrimary"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="520"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="3"
+                android:gravity="left|center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="券后￥"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:text="15.00"
+                    android:textColor="#000000"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="10sp"
+                    android:text="￥"/>
+
+                <TextView
+                    android:id="@+id/yuanjia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:text="60.00"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="26dp"
+                android:layout_weight="2"
+                android:background="@drawable/share_btn_bg"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginRight="-5dp"
+                    android:layout_marginLeft="-5dp"
+                    android:src="@drawable/share_btn_logo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:text="赚￥"/>
+
+                <TextView
+                    android:id="@+id/yongjin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:text="20.00"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

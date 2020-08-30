@@ -1,0 +1,2 @@
+rootProject.name='Mango'
+include ':app'

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bgimage"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/mangoicon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-25dp"
+            android:layout_marginBottom="20dp"
+            android:text="Mango"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#EFC523"/>
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="#EFC523"
+            android:hint="请输入账号"
+            android:text="li1230ao"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:inputType="text"
+            android:background="@drawable/edit_bg"
+            android:textColorHint="#FFCC00"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:hint="请输入密码"
+            android:text="liAo13217"
+            android:inputType="textPassword"
+            android:textColor="#EFC523"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColorHint="#FFCC00"
+            android:background="@drawable/edit_bg"
+            android:textCursorDrawable="@drawable/my_cursor"
+            android:gravity="center" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:textSize="25sp"
+                style="@style/button_blue_style"
+                android:textStyle="bold"
+                android:text="注册"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginRight="2dp"
+                android:textSize="25sp"
+                style="@style/button_blue_style"
+                android:textStyle="bold"
+                android:text="登录"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="©2017-2020 Ui Studio. All rights reserved."
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
